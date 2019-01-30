@@ -1,0 +1,31 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add Book</h2>
+  <form>
+    <div class="form-group">
+      <label for="bookid">Book id:</label>
+      <input type="bookid" [(ngModel)]="book.bookid" placeholder="Enter Book ID" name="bookid" class="form-control" id="bookid">
+    </div>
+  
+    <div class="form-group">
+        <label for="title">Book title:</label>
+        <input type="title" [(ngModel)]="book.title" placeholder="Enter Title" name="title" class="form-control" id="title">
+    </div>
+    <div class="form-group">
+        <label for="price">Book price:</label>
+        <input type="price" [(ngModel)]="book.price" placeholder="Enter Price" name="price" class="form-control" id="price">
+    </div>
+
+    <div class="form-group">
+        <label for="volume">Book volume:</label>
+        <input type="volume" [(ngModel)]="book.volume" placeholder="Enter volume" name="volume" class="form-control" id="volume">
+    </div>
+
+    <div class="form-group">
+        <label for="publishDate">Book publish Date:</label>
+        <input type="publishDate" [(ngModel)]="book.publishDate" placeholder="Enter publish Date" name="publishDate" class="form-control" id="publishDate">
+    </div>
+
+    <button class="btn btn-success" (click)="createBook()">Create</button>
+  </form>
+  </div>
+  
